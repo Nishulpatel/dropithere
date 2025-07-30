@@ -1,15 +1,20 @@
 {
   "compilerOptions": {
+    "target": "ES2022",                    // Fixes private identifiers error
+    "module": "ESNext",
+    "moduleResolution": "bundler",         // Fixes react-router/dom resolution
+    "jsx": "react-jsx",
     "baseUrl": ".",
-    "lib": ["ES2015", "DOM"],
-    "esModuleInterop": true,
     "paths": {
       "@/*": ["src/*"]
     },
-    "jsx": "react-jsx"
+    "lib": ["DOM", "ES2022"],              // Includes DOM + JS features
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,    // Allows imports like './App.tsx'
+    "noEmit": true,                        // Required when using above
+    "skipLibCheck": true
   },
-  "include": ["src"],
-  // "references": [
-  //   { "path": "./tsconfig.node.json" }
-  // ]
+  "include": ["src"]
+  
 }
