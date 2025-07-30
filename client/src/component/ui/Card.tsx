@@ -1,10 +1,10 @@
 import React from "react"
 // import { ShareIcon } from "../icons/ShareIcon"
-import { DeleteIcon } from "../icons/Delete";
+import { DeleteIcon } from "../../icons/Delete";
 // import { TitleIcon } from "../icons/TitleIcon";
-import { TwitterIcon } from '../icons/twitter';
-import { YutubeIcon } from '../icons/YoutubeIcon';
-import { CheckIcon } from "../icons/CheckIcon";
+import { TwitterIcon } from '../../icons/twitter';
+import { YutubeIcon } from '../../icons/YoutubeIcon';
+import { CheckIcon } from "../../icons/CheckIcon";
 
 interface CardProps {
     title : string;

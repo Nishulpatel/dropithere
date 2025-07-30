@@ -20,7 +20,7 @@ export function useContent(){
     useEffect(() => {
         refress()
 
-    let interval =  setInterval(() => {
+    const interval =  setInterval(() => {
             refress()  
         } , 10 * 500)
 

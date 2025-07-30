@@ -1,8 +1,5 @@
-import React from "react";
-import { Button } from "../component/Button";
-import { PlusIcon } from "../icons/plusicon";
-import { ShareIcon } from "../icons/ShareIcon";
-import { NotesIcon } from "../icons/NotesIcon";
+import { RainbowButton } from "./ui/rainbow-button";
+import { Link, NotebookTabs, Share } from "lucide-react";
 
 interface DashboardHeaderProps {
   filteredCount: number;
@@ -33,28 +30,22 @@ export function DashboardHeader({
             {filteredCount} {filterType === "all" ? "items" : filterType} saved
           </p>
           <div className="flex flex-wrap gap-3 items-center">
-            <Button
+            <RainbowButton
               onClick={onShare}
-              startIcon={<ShareIcon />}
-              size="md"
-              variant="secondary"
-              text={isLoading ? "Sharing..." : "Share Deshboard"}
+              size="lg"
               disabled={isGuest || isLoading}
-            />
-            <Button
-              onClick={onAddLink}
-              startIcon={<PlusIcon size="lg" />}
-              size="sm"
-              variant="primary"
-              text="Add Links"
-            />
-            <Button
-              onClick={onAddNote}
-              startIcon={<NotesIcon />}
-              size="sm"
-              variant="primary"
-              text="Create Notes"
-            />
+            >
+              <Share className="mr-2 h-4 w-4" />
+              {isLoading ? "Sharing..." : "Share Dashboard"}
+            </RainbowButton>
+
+            <RainbowButton onClick={onAddLink} size="lg">
+              <Link className="mr-2 h-4 w-4" /> Add Links
+            </RainbowButton>
+
+            <RainbowButton onClick={onAddNote} size="lg">
+              <NotebookTabs className="mr-2 h-4 w-4" /> Add Notes
+            </RainbowButton>
             <button
               onClick={onLogout}
               className="px-4 py-2 rounded-lg border border-red-200 bg-white text-red-500 font-semibold hover:bg-red-50 hover:text-red-600 transition shadow-sm"

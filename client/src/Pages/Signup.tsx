@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Input } from '../component/Input';
-import { Button } from '../component/Button';
+import { Button } from '../component/ui/Button';
 import { BACKRND_URL } from '../config';
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
@@ -49,8 +49,8 @@ export function SignUp() {
 
   return (
     <div className="min-h-screen w-screen bg-gradient-to-br from-gray-100 to-gray-300 flex justify-center items-center px-4">
-      <div className="bg-white dark:bg-zinc-900 rounded-2xl shadow-lg max-w-md w-full p-8 border border-gray-200 dark:border-zinc-700 space-y-6">
-        <h2 className="text-2xl font-bold text-center text-gray-800 dark:text-white">
+      <div className="bg-white  rounded-2xl shadow-lg max-w-md w-full p-8 border border-gray-200  space-y-6">
+        <h2 className="text-2xl font-bold text-center text-gray-800 ">
           Create Your Account
         </h2>
         <div className="space-y-4">

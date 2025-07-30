@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { BACKRND_URL } from "../config";
-import { Card } from "../component/Card";
+import { Card } from "../component/ui/Card";
 import { NotesCard } from "../component/NotesCard";
 
 interface ContentItem {

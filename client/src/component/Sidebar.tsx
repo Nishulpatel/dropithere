@@ -54,7 +54,7 @@ export function SideBar({
           />
         </button>
         {!collapsed && (
-          <span className="ml-3 text-2xl font-extrabold bg-blue-300 hover:bg-blue-400 transition-all bg-clip-text text-transparent tracking-wide select-none">
+          <span className="ml-3 text-2xl font-extrabold bg-neutral-700  hover:bg-neutral-400 transition-all bg-clip-text text-transparent tracking-wide select-none">
             DropItHere
           </span>
         )}

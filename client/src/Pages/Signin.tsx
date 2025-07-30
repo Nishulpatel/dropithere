@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { Input } from '../component/Input';
-import { Button } from '../component/Button';
+import { Button } from '../component/ui/Button';
 import { BACKRND_URL } from '../config';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -66,9 +66,9 @@ export function Signin() {
 
   return (
     <div className="min-h-screen w-screen bg-gradient-to-br from-gray-100 to-gray-300 flex justify-center items-center px-4">
-      <div className="bg-white dark:bg-zinc-900 rounded-2xl shadow-xl w-full max-w-sm p-8 space-y-6 border border-gray-200">
-        <h2 className="text-2xl font-bold text-center text-gray-800 dark:text-white">Welcome Back</h2>
-        <p className="text-sm text-center text-gray-500 dark:text-gray-300">Please sign in to continue</p>
+      <div className="bg-white rounded-2xl shadow-xl w-full max-w-sm p-8 space-y-6 border border-gray-200">
+        <h2 className="text-2xl font-bold text-center text-gray-800 ">Welcome Back</h2>
+        <p className="text-sm text-center text-gray-500 ">Please sign in to continue</p>
         <div className="space-y-4">
           <Input reference={usernameRef} placeholder="Username" type="text" />
           <Input reference={passwordRef} placeholder="Password" type="password" />
@@ -98,7 +98,7 @@ export function Signin() {
         </div>
         {loading && (
           <div className="w-full mt-4">
-            <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+            <div className="w-full bg-gray-200 rounded-full h-2.5 ">
               <div
                 className="bg-blue-600 h-2.5 rounded-full transition-all duration-200"
                 style={{ width: `${progress}%` }}
