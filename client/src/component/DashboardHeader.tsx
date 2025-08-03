@@ -32,6 +32,7 @@ export function DashboardHeader({
           <div className="flex flex-wrap gap-3 items-center">
             <RainbowButton
               onClick={onShare}
+              variant="outline"
               size="lg"
               disabled={isGuest || isLoading}
             >
@@ -39,11 +40,11 @@ export function DashboardHeader({
               {isLoading ? "Sharing..." : "Share Dashboard"}
             </RainbowButton>
 
-            <RainbowButton onClick={onAddLink} size="lg">
+            <RainbowButton onClick={onAddLink}     variant="outline" size="lg">
               <Link className="mr-2 h-4 w-4" /> Add Links
             </RainbowButton>
 
-            <RainbowButton onClick={onAddNote} size="lg">
+            <RainbowButton onClick={onAddNote}     variant="outline"  size="lg">
               <NotebookTabs className="mr-2 h-4 w-4" /> Add Notes
             </RainbowButton>
             <button
