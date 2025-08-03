@@ -16,6 +16,7 @@ app.use(express.json());
 app.use(cors({
   origin: [
     "https://dropithere.nishul.dev", 
+    "https://dropithere-git-main-nishuls-projects-95db0267.vercel.app/",
     "http://localhost:5173"
   ],
   credentials: true
