@@ -69,7 +69,7 @@ export function Signin() {
     <div className="min-h-screen w-screen bg-gradient-to-br from-gray-100 to-gray-300 flex justify-center items-center px-4">
       <div className="bg-white rounded-2xl shadow-xl w-full max-w-sm p-8 space-y-6 border border-gray-200">
         <h2 className="text-2xl font-bold text-center text-gray-800 ">Welcome Back</h2>
-        <p className="text-sm text-center text-gray-500 ">Please sign in to continue</p>
+        <p className="text-sm text-center text-gray-500 ">Please signin to continue</p>
         <div className="space-y-4">
           <Input reference={usernameRef} placeholder="Username" type="text" />
           <Input reference={passwordRef} placeholder="Password" type="password" />
