@@ -4,6 +4,7 @@ import { Button } from '../component/ui/Button';
 import { BACKRND_URL } from '../config';
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
+import { RainbowButton } from '../component/ui/rainbow-button';
 
 export function SignUp() {
   const usernameRef = useRef<HTMLInputElement>(null);
@@ -77,14 +78,15 @@ export function SignUp() {
             size="md"
             fullWidth={true}
           />
-          <Button
+          <RainbowButton
             onClick={continueAsGuest}
-            loading={false}
-            text="Continue as Guest"
-            variant="secondary"
-            size="md"
-            fullWidth={true}
-          />
+            // loading={false}
+            // text="Continue as Guest"
+            variant="outline"
+            size="lg"
+            className='w-full'
+            // fullWidth={true}
+          > Continue as Guest </RainbowButton>
         </div>
       </div>
     </div>

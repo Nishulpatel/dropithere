@@ -4,6 +4,7 @@ import { Button } from '../component/ui/Button';
 import { BACKRND_URL } from '../config';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { RainbowButton } from '../component/ui/rainbow-button';
 
 export function Signin() {
   const [loading, setLoading] = useState(false);
@@ -87,14 +88,15 @@ export function Signin() {
             size="md"
             fullWidth={true}
           />
-          <Button
+          <RainbowButton
             onClick={continueAsGuest}
-            loading={false}
-            text="Continue as Guest"
-            variant="secondary"
-            size="md"
-            fullWidth={true}
-          />
+            // loading={false}
+            // text="Continue as Guest"
+            variant="outline"
+            size="lg"
+            className='w-full'
+            // fullWidth={true}
+          > Continue as Guest </RainbowButton>
         </div>
         {loading && (
           <div className="w-full mt-4">

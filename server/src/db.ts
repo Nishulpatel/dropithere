@@ -38,8 +38,6 @@ const linkSchema = new Schema({
   hash : String,
   userId: {type : objectId , ref : 'user' , required : true }
 })
-
-
 export const linkModel = model("link" , linkSchema);
 export const contentModel = model("contents" , contentSchema);
 export const sharedSnapshotModel = model("SharedSnapshot", SharedSnapshot);
